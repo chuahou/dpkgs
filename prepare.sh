@@ -14,9 +14,17 @@ set -e
 PACKAGE=$1
 GIT_TAG=$2
 
-# clone upstream
-UPSTREAM_URL=$(awk '/Homepage:/{print $2}' $PACKAGE/debian/control)
-git clone --depth 1 --branch $GIT_TAG $UPSTREAM_URL build/$PACKAGE
+mkdir -p build
 
-# copy debian folder over
-cp -r $PACKAGE/debian build/$PACKAGE
+if [ ! -f $PACKAGE/.git ]; then
+	# clone upstream if not a submodule
+	UPSTREAM_URL=$(awk '/Homepage:/{print $2}' $PACKAGE/debian/control)
+	git clone --depth 1 --branch $GIT_TAG $UPSTREAM_URL build/$PACKAGE
+
+	# copy debian folder over
+	cp -r $PACKAGE/debian build/$PACKAGE
+else
+	# otherwise, just copy entire submodule over
+	git -C $PACKAGE checkout $GIT_TAG
+	cp -r $PACKAGE build/$PACKAGE
+fi

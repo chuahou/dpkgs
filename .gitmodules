@@ -1,0 +1,9 @@
+[submodule "quickdep"]
+	path = quickdep
+	url = https://github.com/chuahou/quickdep.git
+[submodule "cpufreq-plugin"]
+	path = cpufreq-plugin
+	url = https://github.com/chuahou/cpufreq-plugin.git
+[submodule "oomox-i3ch"]
+	path = oomox-i3ch
+	url = https://github.com/chuahou/oomox-i3ch.git
