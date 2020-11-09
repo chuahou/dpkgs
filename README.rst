@@ -7,6 +7,8 @@ dpkgs
 Debian packaging for as-of-now unpackaged software that I personally
 use.
 
+Uploaded to `cloudsmith.io <https://cloudsmith.io/~c3hou/repos/dpkgs>`_
+
 Building
 ========
 
