@@ -1,3 +1,10 @@
+ly (0.5.2-kiwami+1) UNRELEASED; urgency=medium
+
+  * Add preparation of submodules to part of package build instead of doing it
+    beforehand.
+
+ -- Chua Hou <human+github@chuahou.dev>  Mon, 09 Nov 2020 18:33:19 +0800
+
 ly (0.5.2-kiwami) focal; urgency=medium
 
   * Initial release.
