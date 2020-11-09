@@ -1,19 +1,26 @@
-###
-ppa
-###
+#####
+dpkgs
+#####
 
 |License: MIT|
 
-`Personal PPA archive <https://en.wikipedia.org/wiki/RAS_syndrome>`_
-files. PPA located at
-https://launchpad.net/~c3hou/+archive/ubuntu/packages.
+Debian packaging for as-of-now unpackaged software that I personally
+use.
 
-Many of these packages have pecularities making it difficult to build
-them purely the Debian way on Launchpad (basically, they need
-dependencies fetched from the web, that Launchpad can't do). Hence, each
-directory may have a prepare.sh script that does modifications that need
-to be done BEFORE running ``debuild``; see each directory's README for
-details.
+Uploaded to `bintray <https://bintray.com/c3hou/dpkgs>`_.
+
+Building
+========
+
+Download upstream to build directory using::
+
+	./prepare.sh <package-name> <tag>
+
+This will clone upstream <package-name> at <tag>, copying
+<package-name>/debian over appropriately. Then, build by entering
+build/<package-name> and running::
+
+	debuild -us -uc -b
 
 Warning
 =======
