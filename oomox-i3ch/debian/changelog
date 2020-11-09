@@ -1,3 +1,10 @@
+oomox-i3ch (0.1.0.0-1fix) focal; urgency=medium
+
+  * Remove oomox from list of dependencies; that build phase is done prior to
+    debuild.
+
+ -- Chua Hou <human+github@chuahou.dev>  Mon, 09 Nov 2020 17:06:09 +0800
+
 oomox-i3ch (0.1.0.0-1) focal; urgency=medium
 
   * Initial release.
