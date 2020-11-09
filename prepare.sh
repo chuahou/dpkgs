@@ -18,11 +18,5 @@ GIT_TAG=$2
 UPSTREAM_URL=$(awk '/Homepage:/{print $2}' $PACKAGE/debian/control)
 git clone --depth 1 --branch $GIT_TAG $UPSTREAM_URL build/$PACKAGE
 
-# run preparation script
-$PACKAGE/prepare.sh build/$PACKAGE
-
-# tar prepared upstream folder
-(cd build; tar czf ${PACKAGE}_$(sed 's/^v//' <<< $GIT_TAG).orig.tar.gz $PACKAGE)
-
 # copy debian folder over
 cp -r $PACKAGE/debian build/$PACKAGE
