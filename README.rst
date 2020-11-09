@@ -7,8 +7,6 @@ dpkgs
 Debian packaging for as-of-now unpackaged software that I personally
 use.
 
-Uploaded to `packagecloud.io <https://packagecloud.io/chuahou/dpkgs>`_.
-
 Building
 ========
 
