@@ -7,3 +7,6 @@
 [submodule "oomox-i3ch"]
 	path = oomox-i3ch
 	url = https://github.com/chuahou/oomox-i3ch.git
+[submodule "userxinitrc"]
+	path = userxinitrc
+	url = https://github.com/chuahou/userxinitrc.git
