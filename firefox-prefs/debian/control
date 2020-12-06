@@ -1,0 +1,15 @@
+Source:            firefox-prefs
+Maintainer:        Chua Hou <human+github@chuahou.dev>
+Section:           misc
+Priority:          optional
+Standards-Version: 3.9.2
+Build-Depends:     debhelper (>= 11)
+Homepage:          https://github.com/chuahou/dpkgs
+
+Package:      firefox-prefs
+Architecture: any
+Depends:      ${shlibs:Depends}, ${misc:Depends}, firefox (>= 83.0)
+Description:  Firefox preferences with autoconfig
+ My personal Firefox settings with autoconfig. Since user.js is harder to set up
+ easily, and autoconfig.js requires non-user files, I have packaged it in a
+ Debian package.
