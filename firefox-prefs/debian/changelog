@@ -1,3 +1,9 @@
+firefox-prefs (0.1.1.0) focal; urgency=medium
+
+  * Add full-screen-api.ignore-widgets <- true.
+
+ -- Chua Hou <human+github@chuahou.dev>  Sun, 06 Dec 2020 13:20:05 +0800
+
 firefox-prefs (0.1.0.0) focal; urgency=medium
 
   * Initial release.
