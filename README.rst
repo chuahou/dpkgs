@@ -4,6 +4,8 @@ dpkgs
 
 |License: MIT|
 
+**Succeeded by** `NixOS configuration <https://github.com/chuahou/conf.nix>`_.
+
 Debian packaging for as-of-now unpackaged software that I personally
 use.
 
